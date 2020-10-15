@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 const ShopItemFunc = ({ item }) => {
   const { brand, title, description, descriptionFull, price, currency } = item;
-  console.log(item);
   return (
     <div className="main-content">
       <h2>{brand}</h2>
