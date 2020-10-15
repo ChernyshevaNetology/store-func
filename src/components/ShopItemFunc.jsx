@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const ShopItemFunc = ({ item }) => {
   const { brand, title, description, descriptionFull, price, currency } = item;
@@ -22,6 +23,10 @@ const ShopItemFunc = ({ item }) => {
       </div>
     </div>
   );
+};
+
+ShopItemFunc.propTypes = {
+  item: PropTypes.object,
 };
 
 export default ShopItemFunc;
